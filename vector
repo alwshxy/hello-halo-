@@ -1,0 +1,29 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+  vector<int>nums;
+
+  int temp , sum = 0;
+
+  do
+  {
+      cin >> temp;
+
+      sum += 1;
+
+      nums.push_back(temp);
+  }
+  while(sum < 5);
+
+  vector<int>::iterator it;
+
+  for(it = nums.begin(); it < nums.end(); it++)
+  {
+      cout << *it << endl;
+  }
+  return 0;
+}
